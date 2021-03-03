@@ -21,6 +21,13 @@
           GitHub
         </a>
       </div>
+
+      <div>
+        Preparing for the brightest future, IWEREKUN COMMUNITY SENIOR HIGH
+        SCHOOL provides unparalleled dedication and commitment to students and
+        their variety of needs, passions and dreams. Explore our website to
+        learn more about us.
+      </div>
     </div>
   </div>
 </template>
