@@ -1,8 +1,10 @@
 <template>
-  <div class="container">
+  <div
+    class="container min-h-screen flex justify-center items-center text-center mx-auto"
+  >
     <div>
       <Logo />
-      <h1 class="title">schools-website-template</h1>
+      <h1 class="title">Sample School Template</h1>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -22,7 +24,7 @@
         </a>
       </div>
 
-      <div>
+      <div class="py-10">
         Preparing for the brightest future, IWEREKUN COMMUNITY SENIOR HIGH
         SCHOOL provides unparalleled dedication and commitment to students and
         their variety of needs, passions and dreams. Explore our website to
@@ -42,14 +44,6 @@ export default {}
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,

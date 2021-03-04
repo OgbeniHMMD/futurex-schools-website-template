@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <main>
+    <partials-header />
     <Nuxt />
-  </div>
+    <partials-footer />
+  </main>
 </template>
 
 <style>

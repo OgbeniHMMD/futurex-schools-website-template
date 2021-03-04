@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'schools-website-template',
+    title: 'Sample School Template',
     htmlAttrs: {
       lang: 'en',
     },
@@ -34,7 +34,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    //
+    // https://github.com/nuxt/vite
     'nuxt-vite',
   ],
 
@@ -51,6 +51,10 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
+
+  publicRuntimeConfig: {
+    schoolName: 'Hisbiscus Academy',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
