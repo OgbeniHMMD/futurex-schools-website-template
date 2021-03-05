@@ -34,8 +34,6 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    // https://github.com/nuxt/vite
-    'nuxt-vite',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -54,6 +52,8 @@ export default {
 
   publicRuntimeConfig: {
     schoolName: 'Hisbiscus Academy',
+    schoolEmail: 'contact@hisbiscusacademy.ng',
+    schoolTelephone: '+234 8100 123 456',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

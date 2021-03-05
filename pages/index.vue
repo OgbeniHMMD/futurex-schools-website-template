@@ -1,37 +1,44 @@
 <template>
-  <div
-    class="container min-h-screen flex justify-center items-center text-center mx-auto"
-  >
-    <div>
-      <Logo />
-      <h1 class="title">Sample School Template</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-
-      <div class="py-10">
-        Preparing for the brightest future, IWEREKUN COMMUNITY SENIOR HIGH
-        SCHOOL provides unparalleled dedication and commitment to students and
-        their variety of needs, passions and dreams. Explore our website to
-        learn more about us.
+  <main>
+    <partials-header />
+    <div
+      class="container min-h-screen flex justify-center items-center text-center mx-auto"
+    >
+      <div>
+        <Logo />
+        <h1 class="title">Sample School Template</h1>
+        <div class="links">
+          <a
+            href="https://nuxtjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button--green"
+          >
+            Documentation
+          </a>
+          <a
+            href="https://github.com/nuxt/nuxt.js"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button--grey"
+          >
+            GitHub
+          </a>
+        </div>
       </div>
     </div>
-  </div>
+
+    <div
+      class="container bg-gray-100 text-gray-700 p-10 my-8 rounded-2xl shadow-sm"
+    >
+      Preparing for the brightest future, IWEREKUN COMMUNITY SENIOR HIGH SCHOOL
+      provides unparalleled dedication and commitment to students and their
+      variety of needs, passions and dreams. Explore our website to learn more
+      about us.
+    </div>
+
+    <partials-footer />
+  </main>
 </template>
 
 <script>

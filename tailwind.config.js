@@ -13,8 +13,15 @@ module.exports = {
   theme: {
     container: {
       center: true,
+      padding: '1em',
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#066d36',
+        secondary: '#A6EBC9',
+        accent: '#fffbdb',
+      },
+    },
   },
   variants: {},
   plugins: [],

@@ -1,8 +1,6 @@
 <template>
   <main>
-    <partials-header />
     <Nuxt />
-    <partials-footer />
   </main>
 </template>
 
