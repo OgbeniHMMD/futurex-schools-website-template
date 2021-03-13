@@ -1,14 +1,27 @@
 <template>
-  <header class="border-b bg-transparent py-6">
-    <div class="container flex justify-between">
-      <div class="h4">H E A D E R</div>
+  <header class="borde r-b bg-transparent py-2">
+    <div class="container flex justify-between items-center">
       <div>
-        <span class="bg-red-300 text-red-900 px-4 py-2 rounded">MENU 1</span>
-        <span class="bg-blue-300 text-blue-900 px-4 py-2 rounded ml-2 text-sm"
-          >MENU 2</span
+        <nuxt-link
+          v-for="i in 3"
+          :key="i"
+          to="#menu"
+          class="text-primary px-4 py-2 rounded-full mr-2 hover:bg-accent"
+          >#MENU {{ i }}</nuxt-link
         >
-        <span class="bg-green-300 text-primary px-4 py-2 rounded ml-2"
-          >MENU 3</span
+      </div>
+
+      <nuxt-link class="h4" to="/">
+        <img :src="$config.schoolLogo" alt="logo" class="mx-auto" width="100" />
+      </nuxt-link>
+
+      <div>
+        <nuxt-link
+          v-for="i in 3"
+          :key="i"
+          to="#menu"
+          class="text-primary px-4 py-2 rounded-full mr-2 hover:bg-accent"
+          >/MENU {{ i }}</nuxt-link
         >
       </div>
     </div>

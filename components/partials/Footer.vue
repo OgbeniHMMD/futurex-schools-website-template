@@ -51,7 +51,7 @@
               v-for="quickLink in quickLinks"
               :key="quickLink.slug"
               :to="quickLink.slug"
-              class="block py-1 hover:bg-accent"
+              class="block py-1 hover:bg-accent rounded-full"
               v-text="quickLink.title"
             />
           </div>
