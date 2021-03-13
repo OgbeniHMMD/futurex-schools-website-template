@@ -54,6 +54,8 @@ export default {
     schoolName: 'Hisbiscus Academy',
     schoolEmail: 'contact@hisbiscusacademy.ng',
     schoolTelephone: '+234 8100 123 456',
+
+    schoolLogo: '/images/school-logo.svg',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
