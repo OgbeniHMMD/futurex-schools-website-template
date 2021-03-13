@@ -2,7 +2,7 @@
   <footer>
     <nav class="container py-8">
       <nav
-        class="lg:w-2/3 bg-gradient-to-r via-xxsecondary from-accent to-white rounded lg:rounded-2xl shadow-md mx-auto"
+        class="lg:w-2/3 bg-gradient-to-r from-accent to-white rounded lg:rounded-2xl shadow-md mx-auto"
       >
         <nav
           class="flex justify-between bg-right bg-no-repeat bg-contain text-primary"
@@ -37,20 +37,23 @@
       <div class="container flex justify-center items-center">
         <nav class="flex-1">
           <img
-            src="/images/school-logo.svg"
+            :src="$config.schoolLogo"
             alt="logo"
             class="mx-auto"
             width="240"
           />
         </nav>
 
-        <nav class="px-12">
+        <nav class="flex-1 pa-2">
           <div class="text-center text-primary">
             <h4 class="text-xl font-serif font-bold pb-4">Quick Links</h4>
-            <div class="py-1">Home</div>
-            <div class="py-1">About</div>
-            <div class="py-1">Staff</div>
-            <div class="py-1">Gallery</div>
+            <nuxt-link
+              v-for="quickLink in quickLinks"
+              :key="quickLink.slug"
+              :to="quickLink.slug"
+              class="block py-1 hover:bg-accent"
+              v-text="quickLink.title"
+            />
           </div>
         </nav>
 
@@ -76,3 +79,18 @@
     </nav>
   </footer>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      quickLinks: [
+        { title: 'Home', slug: '/' },
+        { title: 'About', slug: '/about/' },
+        { title: 'Staff', slug: '/staff/' },
+        { title: 'Gallery', slug: '/gallery/' },
+      ],
+    }
+  },
+}
+</script>
