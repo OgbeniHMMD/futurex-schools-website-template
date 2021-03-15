@@ -44,7 +44,6 @@
           />
         </nav>
 
-<<<<<<< HEAD
         <nav class="flex-0 text-primary">
           <h4 class="text-lg font-serif font-bold pb-4">Quick Links</h4>
           <nuxt-link
@@ -54,19 +53,6 @@
             class="block px-3 py-1 my-1 hover:bg-accent rounded-full"
             ><span class="mr-2">[X]</span> {{ link.title }}</nuxt-link
           >
-=======
-        <nav class="flex-1 pa-2">
-          <div class="text-center text-primary">
-            <h4 class="text-xl font-serif font-bold pb-4">Quick Links</h4>
-            <nuxt-link
-              v-for="quickLink in quickLinks"
-              :key="quickLink.slug"
-              :to="quickLink.slug"
-              class="block py-1 hover:bg-accent"
-              v-text="quickLink.title"
-            />
-          </div>
->>>>>>> 82d811d1733dd2f727bde50fbec2118aefa68eb8
         </nav>
 
         <nav class="flex--1">
@@ -103,7 +89,6 @@ export default {
     return {
       quickLinks: [
         { title: 'Home', slug: '/' },
-<<<<<<< HEAD
         { title: 'About Us', slug: '/about/' },
         { title: 'Our Staff', slug: '/staff/' },
         { title: 'Gallery', slug: '/gallery/' },
@@ -113,12 +98,6 @@ export default {
         { title: 'Twitter', slug: '#' },
         { title: 'Instagram', slug: '#' },
       ],
-=======
-        { title: 'About', slug: '/about/' },
-        { title: 'Staff', slug: '/staff/' },
-        { title: 'Gallery', slug: '/gallery/' },
-      ],
->>>>>>> 82d811d1733dd2f727bde50fbec2118aefa68eb8
     }
   },
 }
