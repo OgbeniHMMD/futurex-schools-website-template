@@ -16,6 +16,7 @@ module.exports = {
       padding: '1em',
     },
     extend: {
+      backgroundOpacity: ['active'],
       colors: {
         primary: '#066d36',
         secondary: '#A6EBC9',

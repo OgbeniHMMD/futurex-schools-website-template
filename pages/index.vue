@@ -1,32 +1,36 @@
 <template>
   <main>
-    <partials-header />
-    <div
-      class="container min-h-screen flex justify-center items-center text-center mx-auto"
+    <header
+      class="min-h-screen flex flex-col bg-fixed bg-no-repeat bg-cover"
+      style="background-image: url('/images/sliders/slider-1.jpeg')"
     >
-      <div>
-        <Logo />
-        <h1 class="title">Sample School Template</h1>
-        <div class="links">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button--green"
-          >
-            Documentation
-          </a>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button--grey"
-          >
-            GitHub
-          </a>
+      <partials-header />
+
+      <nav
+        class="flex-1 container flex justify-center items-center text-center mx-auto"
+      >
+        <div>
+          <div class="links">
+            <a
+              href="https://nuxtjs.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button--green"
+            >
+              Documentation
+            </a>
+            <a
+              href="https://github.com/nuxt/nuxt.js"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button--grey"
+            >
+              GitHub
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div
       class="container bg-gray-100 text-gray-700 p-10 my-8 rounded-2xl shadow-sm"
@@ -46,7 +50,8 @@ export default {}
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
+/* 
+HeaderSample `apply` at-rules with Tailwind CSS
 .container {
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
