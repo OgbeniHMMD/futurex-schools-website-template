@@ -6,7 +6,7 @@
     <partials-nav-bar />
 
     <nav
-      class="flex-1 flex flex-col justify-end items-baseline mx-auto lg:w-2/3 py-4 shadow"
+      class="flex-1 flex flex-col justify-end items-baseline mx-auto lg:w-2/3 py-4"
     >
       <div class="bg-white bg-opacity-75 p-8 rounded shadow">
         <div class="text-xl">
@@ -55,8 +55,9 @@ export default {
   },
 
   mounted() {
-    const interval = 3000
     let i = 0
+    const interval = 3000
+
     setInterval(() => {
       this.currentCarousel = this.carousel[i]
       i >= this.carousel.length - 1 ? (i = 0) : i++
