@@ -2,6 +2,7 @@
   <main>
     <partials-header />
     <home-departments />
+    <home-about-school />
 
     <section class="container py-12">
       <h2 class="text-xl text-center font-bold font-bolder pb-8">
@@ -26,10 +27,12 @@
       <div
         class="container md:2/3 lg:w-3/5 text-lg leading-relaxed font-medium py-12 md:py-20"
       >
-        Preparing for the brightest future, IWEREKUN COMMUNITY SENIOR HIGH
-        SCHOOL provides unparalleled dedication and commitment to students and
-        their variety of needs, passions and dreams. Explore our website to
-        learn more about us.
+        Iwerekun Community Senior High School is a state owned co-educational
+        secondary school. The school was founded in 1982 by the Lagos State
+        Government during the administration of Late Alh. Lateef Kayode Jakande.
+        The school has over the years grown from an initial population of about
+        fifty students to about one thousand seven hundred and fifty to about a
+        staff strength of thirty five.
       </div>
     </div>
 
