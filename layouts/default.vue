@@ -4,11 +4,18 @@
   </main>
 </template>
 
+<script>
+import '@fortawesome/fontawesome-free/css/all.css'
+import '@fortawesome/fontawesome-free/js/all.js'
+
+export default {}
+</script>
+
 <style>
 html {
   font-family: Roboto, 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

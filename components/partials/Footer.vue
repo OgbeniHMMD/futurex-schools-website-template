@@ -45,13 +45,18 @@
         </nav>
 
         <nav class="flex-0 text-primary">
-          <h4 class="text-lg font-serif font-bold pb-4">Quick Links</h4>
+          <h4
+            class="text-center text-lg tracking-wide font-serif font-bold pb-4"
+          >
+            Quick Links
+          </h4>
           <nuxt-link
             v-for="link in quickLinks"
             :key="link.slug"
             :to="link.slug"
-            class="block px-3 py-1 my-1 hover:bg-accent rounded-full"
-            ><span class="mr-2">[X]</span> {{ link.title }}</nuxt-link
+            class="block px-6 py-2 my-2 bg-accent rounded-full shadow-sm hover:shadow"
+            ><i class="fas mr-4" :class="link.icon" />
+            {{ link.title }}</nuxt-link
           >
         </nav>
 
@@ -69,12 +74,14 @@
     <nav class="container text-center text-gray-800 py-12">
       <div class="text-center text-primary pb-4">
         <nuxt-link
-          v-for="link in quickLinks"
+          v-for="link in socialLinks"
           :key="link.slug"
           :to="link.slug"
-          class="p-1 mx-2 hover:bg-accent rounded-full"
-          >[X]</nuxt-link
+          :title="link.title"
+          class="p-2 mx-2 rounded"
         >
+          <i class="fab" :class="link.icon" />
+        </nuxt-link>
       </div>
 
       &copy; {{ $config.schoolName }}, 2021. Powered by
@@ -88,15 +95,16 @@ export default {
   data() {
     return {
       quickLinks: [
-        { title: 'Home', slug: '/' },
-        { title: 'About Us', slug: '/about/' },
-        { title: 'Our Staff', slug: '/staff/' },
-        { title: 'Gallery', slug: '/gallery/' },
+        { title: 'Home', slug: '/', icon: 'fa-home' },
+        { title: 'About Us', slug: '/about/', icon: 'fa-info-circle' },
+        { title: 'Our Staff', slug: '/staff/', icon: 'fa-users' },
+        { title: 'Gallery', slug: '/gallery/', icon: 'fa-photo-video' },
       ],
       socialLinks: [
-        { title: 'Facebook', slug: '#' },
-        { title: 'Twitter', slug: '#' },
-        { title: 'Instagram', slug: '#' },
+        { title: 'Facebook', slug: '#facebook-link', icon: 'fa-facebook' },
+        { title: 'Twitter', slug: '#twitter-link', icon: 'fa-twitter' },
+        { title: 'Instagram', slug: '#Instagram-link', icon: 'fa-instagram' },
+        { title: 'Youtube', slug: '#youtube-link', icon: 'fa-youtube' },
       ],
     }
   },

@@ -6,7 +6,7 @@
     <partials-nav-bar />
 
     <nav
-      class="flex-1 flex flex-col justify-end items-baseline mx-auto lg:w-2/3 py-4"
+      class="flex-1 flex flex-col justify-end items-baseline mx-auto w-full lg:w-2/3 py-4"
     >
       <div class="bg-white bg-opacity-75 p-8 rounded shadow">
         <div class="text-xl">
@@ -18,7 +18,7 @@
             href="#about"
             class="text-white bg-primary text-center text-bold px-8 py-3 rounded mr-2 hover:bg-accent hover:text-primary border border-primary"
           >
-            Learn More
+            Learn More <i class="fas fa-chevron-circle-down ml-8" />
           </a>
         </div>
       </div>
