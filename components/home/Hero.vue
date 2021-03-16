@@ -4,7 +4,10 @@
       class="lg:flex justify-between"
       :class="reversed ? 'flex-row-reverse' : ''"
     >
-      <div class="lg:w-1/2 text-secondary">
+      <div
+        class="lg:w-1/2 text-secondary"
+        :style="reversed ? '' : ' place-self-center'"
+      >
         <img :src="src" class="rounded shadow" style="max-height: 420px" />
       </div>
 
