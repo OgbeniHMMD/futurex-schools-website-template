@@ -1,15 +1,17 @@
 <template>
   <header
-    class="min-h-screen flex flex-col bg-fixed bg-no-repeat bg-cover"
+    class="min-h-screen flex flex-col bg-fixed bg-no-repeat bg-cover bg-gradient-to-b from-secondary to-accent"
     :style="`background-image: url('${currentCarousel.image}')`"
   >
     <partials-nav-bar />
 
     <nav
-      class="flex-1 flex flex-col justify-end items-baseline mx-auto w-full lg:w-2/3 py-4"
+      class="flex-1 flex flex-col justify-end items-baseline mx-auto lg:w-2/3 py-4"
     >
-      <div class="bg-white bg-opacity-75 p-8 rounded shadow">
-        <div class="text-xl">
+      <div
+        class="bg-secondary bg-opacity-75 p-8 lg:px-12 rounded shadow w-full"
+      >
+        <div class="text-lg text-wide leading-relaxed">
           {{ currentCarousel.text }}
         </div>
 
@@ -18,7 +20,7 @@
             href="#about"
             class="text-white bg-primary text-center text-bold px-8 py-3 rounded mr-2 hover:bg-accent hover:text-primary border border-primary"
           >
-            Learn More <i class="fas fa-chevron-circle-down ml-8" />
+            Explore Website <i class="fas fa-chevron-circle-down ml-8" />
           </a>
         </div>
       </div>
@@ -40,7 +42,7 @@ export default {
             'We aims at preparing for the brightest future by giving unparalleled dedication and commitment to our students and their variety of needs, passions and dreams.',
         },
         {
-          title: 'Throupy 1',
+          title: 'Trophy 1',
           image: '/images/sliders/slide-2.jpeg',
           text:
             'We won bla bla bla Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere et ex sit amet lobortis. Pellentesque sodales et lacus in posuere.',

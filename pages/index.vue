@@ -11,6 +11,7 @@
       about us.
     </div>
 
+    <home-contact-card />
     <partials-footer />
   </main>
 </template>

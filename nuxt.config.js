@@ -70,6 +70,11 @@ export default {
     schoolTelephone: '+234 8100 123 456',
 
     schoolLogo: '/images/school-logo.svg',
+
+    schoolFacebook: 'https://facebook.com/HibiscusAcademy',
+    schoolTwitter: 'https://twitter.com/HibiscusAcademy',
+    schoolInstagram: 'https://instagram.com/HibiscusAcademy',
+    schoolYoutube: 'https://youtube.com/HibiscusAcademy',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
