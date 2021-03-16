@@ -1,5 +1,5 @@
 <template>
-  <section class="container py-12">
+  <section id="departments" class="container py-12">
     <h2 class="text-xl text-center font-semibold py-8">Departments</h2>
 
     <div class="flex justify-around py-8">
