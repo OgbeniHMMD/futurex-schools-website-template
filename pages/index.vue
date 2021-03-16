@@ -3,6 +3,7 @@
     <partials-header />
     <home-departments />
     <home-about-school />
+    <home-mission-vision />
 
     <section class="container py-12">
       <h2 class="text-xl text-center font-bold font-bolder pb-8">
