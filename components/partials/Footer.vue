@@ -1,17 +1,10 @@
 <template>
   <footer>
     <nav class="text-gray-800 py-12">
-      <div class="container flex justify-around item-center">
-        <nav class="fl ex-1">
-          <img
-            :src="$config.schoolLogo"
-            alt="logo"
-            class="mx-auto"
-            width="240"
-          />
-        </nav>
-
-        <nav class="flex-0 text-primary">
+      <div class="container flex flex-wrap justify-around item-center">
+        <nav
+          class="min-w-full md:min-w-0 md:max-w-1/4 text-primary order-1 md:order-2 pb-8 md:pb-0"
+        >
           <h4 class="text-center text-lg tracking-wide font-bold pb-4">
             Quick Links
           </h4>
@@ -25,7 +18,16 @@
           >
         </nav>
 
-        <nav class="flex--1">
+        <nav class="order-2 md:order-1 pb-8 md:pb-0">
+          <img
+            :src="$config.schoolLogo"
+            alt="logo"
+            class="mx-auto"
+            width="240"
+          />
+        </nav>
+
+        <nav class="order-3">
           <img
             src="/images/lagos-logo.svg"
             alt="logo"

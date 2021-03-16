@@ -8,8 +8,27 @@
       </h2>
 
       <div class="lg:flex justify-between py-8">
+        <div class="lg:w-1/2 text-primary">
+          <i class="far fa-comments fa-10x" />
+        </div>
+
+        <div class="lg:w-1/2">
+          Preparing for the brightest future, IWEREKUN COMMUNITY SENIOR HIGH
+          SCHOOL provides unparalleled dedication and commitment to students and
+          their variety of needs, passions and dreams. Explore our website to
+          learn more about us.
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-12">
+      <h2 class="text-xl text-center font-bold font-bolder pb-8">
+        Sample Hero 1
+      </h2>
+
+      <div class="lg:flex justify-between py-8">
         <div class="lg:w-1/2 text-secondary">
-          <i class="far fa-comments fa-10x invisible lg:visible" />
+          <i class="far fa-comments fa-10x" />
         </div>
 
         <div class="lg:w-1/2">
