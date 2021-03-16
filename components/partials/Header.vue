@@ -30,6 +30,7 @@
 export default {
   data() {
     return {
+      preloadImages: [],
       currentCarousel: {},
       carousel: [
         {
@@ -55,8 +56,15 @@ export default {
   },
 
   mounted() {
+    // pre-load carousel/slider images
+    this.carousel.forEach((element) => {
+      const x = new Image(0, 0)
+      x.src = element.image
+    })
+
+    // Set Interval for slide change
     let i = 0
-    const interval = 3000
+    const interval = 5000
 
     setInterval(() => {
       this.currentCarousel = this.carousel[i]
