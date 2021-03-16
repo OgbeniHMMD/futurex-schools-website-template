@@ -10,11 +10,13 @@
           <div class="flex flex-column items-center h-full">
             <div>
               <h2 class="text-xl font-bold font-bolder pb-8">Contact Us!</h2>
-              <div class="font-medium pb-4">
-                <i class="fas fa-phone mr-4" /> {{ $config.schoolTelephone }}
-              </div>
-              <div class="font-medium tracking-wide">
-                <i class="fas fa-envelope mr-4" /> {{ $config.schoolEmail }}
+
+              <div
+                v-for="info in contactInfo"
+                :key="info.title"
+                class="font-medium pb-4"
+              >
+                <i class="fas mr-4" :class="info.icon" /> {{ info.address }}
               </div>
             </div>
           </div>
@@ -27,3 +29,29 @@
     </nav>
   </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      contactInfo: [
+        {
+          title: 'Phone',
+          icon: 'fa-phone',
+          address: this.$config.schoolTelephone,
+        },
+        {
+          title: 'E-mail',
+          icon: 'fa-envelope',
+          address: this.$config.schoolEmail,
+        },
+        {
+          title: 'Address',
+          icon: 'fa-map-marker',
+          address: this.$config.schoolLocation,
+        },
+      ],
+    }
+  },
+}
+</script>

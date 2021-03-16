@@ -1,6 +1,6 @@
 <template>
   <header
-    class="min-h-screen flex flex-col bg-fixed bg-no-repeat bg-cover bg-gradient-to-b from-secondary to-accent"
+    class="min-h-screen flex flex-col bg-fixed bg-no-repeat bg-cover bg-accent"
     :style="`background-image: url('${currentCarousel.image}')`"
   >
     <partials-nav-bar />
@@ -18,7 +18,7 @@
         <div class="pt-8">
           <a
             href="#about"
-            class="text-white bg-primary text-center text-bold px-8 py-3 rounded mr-2 hover:bg-accent hover:text-primary border border-primary"
+            class="text-white bg-primary text-center text-lg font-semibold px-8 py-3 rounded mr-2 hover:bg-accent hover:text-primary border border-primary"
           >
             Explore Website <i class="fas fa-chevron-circle-down ml-8" />
           </a>
@@ -57,7 +57,7 @@ export default {
     }
   },
 
-  mounted() {
+  created() {
     // pre-load carousel/slider images
     this.carousel.forEach((element) => {
       const x = new Image(0, 0)
@@ -66,7 +66,7 @@ export default {
 
     // Set Interval for slide change
     let i = 0
-    const interval = 5000
+    const interval = 10000
 
     setInterval(() => {
       this.currentCarousel = this.carousel[i]

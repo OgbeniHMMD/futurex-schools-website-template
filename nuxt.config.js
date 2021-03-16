@@ -65,11 +65,12 @@ export default {
   content: {},
 
   publicRuntimeConfig: {
-    schoolName: 'Hisbiscus Academy',
+    schoolLogo: '/images/school-logo.svg',
+    schoolName: 'Iwerekun Community Senior High School',
+
     schoolEmail: 'contact@hisbiscusacademy.ng',
     schoolTelephone: '+234 8100 123 456',
-
-    schoolLogo: '/images/school-logo.svg',
+    schoolLocation: 'Lakowe, Ibeju-Lekki L.G.A, Lagos State',
 
     schoolFacebook: 'https://facebook.com/HibiscusAcademy',
     schoolTwitter: 'https://twitter.com/HibiscusAcademy',
