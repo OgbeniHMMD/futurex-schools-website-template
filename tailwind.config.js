@@ -15,6 +15,13 @@ module.exports = {
       center: true,
       padding: '1em',
     },
+
+    fontFamily: {
+      sans: ['Roboto', 'sans-serif', 'ui-sans-serif', 'system-ui'],
+      serif: ['ui-serif', 'Georgia'],
+      mono: ['ui-monospace', 'SFMono-Regular'],
+    },
+
     extend: {
       backgroundOpacity: ['active'],
       colors: {
