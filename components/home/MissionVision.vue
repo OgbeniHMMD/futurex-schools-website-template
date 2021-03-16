@@ -1,6 +1,6 @@
 <template>
   <section id="departments" class="container py-12">
-    <div class="flex justify-around py-8">
+    <div class="md:flex justify-around md:py-8">
       <div
         v-for="item in misionVision"
         :key="item.title"
@@ -10,7 +10,7 @@
           {{ item.title }}
         </div>
 
-        <div class="py-4">{{ item.text }}</div>
+        <div class="leading-loose py-4">{{ item.text }}</div>
       </div>
     </div>
   </section>
