@@ -12,7 +12,7 @@
             v-for="link in quickLinks"
             :key="link.slug"
             :to="link.slug"
-            class="block px-6 py-2 my-2 font-medium bg-accent rounded-full border border-secondary hover:bg-secondary"
+            class="block px-6 py-2 my-2 font-medium bg-accent rounded-full"
             ><i class="fas mr-4" :class="link.icon" />
             {{ link.title }}</nuxt-link
           >
@@ -68,10 +68,10 @@ export default {
   data() {
     return {
       quickLinks: [
-        { title: 'Home', slug: '/', icon: 'fa-home' },
-        { title: 'About Us', slug: '/about/', icon: 'fa-info-circle' },
-        { title: 'Our Staff', slug: '/staff/', icon: 'fa-users' },
-        { title: 'Gallery', slug: '/gallery/', icon: 'fa-photo-video' },
+        { title: 'Home', slug: '/#home', icon: 'fa-home' },
+        { title: 'About Us', slug: '/#about/', icon: 'fa-info-circle' },
+        { title: 'Our Staff', slug: '/#staff/', icon: 'fa-users' },
+        { title: 'Gallery', slug: '/#gallery/', icon: 'fa-photo-video' },
       ],
       socialLinks: [
         {

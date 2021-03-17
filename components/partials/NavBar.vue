@@ -1,7 +1,7 @@
 <template>
-  <header class="container flex justify-around items-center py-1">
+  <header id="home" class="container flex justify-around items-center py-1">
     <nav
-      class="hidden md:flex flex-1 justify-around bg-white bg-opacity-75 py-1 font-bold rounded-full shadow"
+      class="hidden md:flex flex-1 justify-around bg-white py-1 font-bold rounded-full shadow"
     >
       <nuxt-link
         v-for="link in JumpLinks"
@@ -20,7 +20,7 @@
     </nuxt-link>
 
     <nav
-      class="hidden md:flex flex-1 justify-around bg-white bg-opacity-75 py-1 font-bold rounded-full shadow"
+      class="hidden md:flex flex-1 justify-around bg-white py-1 font-bold rounded-full shadow"
     >
       <nuxt-link
         v-for="link in anchorLinks"
@@ -42,9 +42,9 @@ export default {
         { title: 'Contact', slug: '/#contact' },
       ],
       anchorLinks: [
-        { title: 'About', slug: '/about/' },
-        { title: 'Staff', slug: '/staff/' },
-        { title: 'Gallery', slug: '/gallery/' },
+        { title: 'About', slug: '/#about' },
+        { title: 'Staff', slug: '/#staff' },
+        { title: 'Gallery', slug: '/#gallery' },
       ],
     }
   },

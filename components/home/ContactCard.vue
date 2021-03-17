@@ -6,7 +6,7 @@
       <nav
         class="flex justify-evenly bg-right bg-no-repeat bg-contain text-primary"
       >
-        <div class="flex justify-between items-center w-full p-12">
+        <div class="flex justify-between items-center w-full p-8 md:p-12">
           <div class="flex flex-column items-center h-full">
             <div>
               <h2 class="text-xl font-bold font-bolder pb-8">Contact Us!</h2>
@@ -14,7 +14,7 @@
               <div
                 v-for="info in contactInfo"
                 :key="info.title"
-                class="font-medium pb-4"
+                class="flex font-medium pb-4"
               >
                 <i class="fas mr-4" :class="info.icon" /> {{ info.address }}
               </div>
@@ -22,7 +22,7 @@
           </div>
 
           <div class="text-secondary">
-            <i class="far fa-comments fa-10x invisible lg:visible" />
+            <i class="far fa-comments fa-10x hidden lg:inline" />
           </div>
         </div>
       </nav>

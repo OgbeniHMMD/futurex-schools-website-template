@@ -1,12 +1,12 @@
 <template>
   <header
-    class="min-h-screen flex flex-col bg-fixed bg-no-repeat bg-cover bg-accent"
+    class="min-h-screen flex flex-col bg-fixed bg-no-repeat bg-cover bg-center bg-accent"
     :style="`background-image: url('${currentCarousel.image}')`"
   >
     <partials-nav-bar />
 
     <nav
-      class="flex-1 flex flex-col justify-end items-baseline mx-auto lg:w-2/3 py-4"
+      class="flex-1 flex flex-col justify-end items-baseline mx-auto lg:w-2/3 py-4 lg:py-8"
     >
       <div
         class="bg-secondary bg-opacity-75 p-8 lg:px-12 rounded shadow w-full"
@@ -15,14 +15,14 @@
           {{ currentCarousel.text }}
         </div>
 
-        <div class="pt-8">
+        <!-- <div class="pt-8">
           <a
             href="#about"
             class="text-white bg-primary text-center text-lg font-semibold px-8 py-3 rounded mr-2 hover:bg-accent hover:text-primary border border-primary"
           >
             Explore Website <i class="fas fa-chevron-circle-down ml-8" />
           </a>
-        </div>
+        </div> -->
       </div>
     </nav>
   </header>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-accent text-gray-700 my-8">
+  <div id="about" class="bg-accent text-gray-700 my-8">
     <div
       class="container md:2/3 lg:w-3/5 leading-relaxed font-medium py-12 md:py-20"
     >
