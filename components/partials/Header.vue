@@ -6,10 +6,10 @@
     <partials-nav-bar />
 
     <nav
-      class="flex-1 flex flex-col justify-end items-baseline mx-auto lg:w-2/3 py-4 lg:py-8"
+      class="flex-1 flex flex-col justify-end items-baseline lg:w-2/3 py-4 lg:py-8 mx-auto"
     >
       <div
-        class="bg-secondary bg-opacity-75 p-8 lg:px-12 rounded shadow w-full"
+        class="bg-secondary bg-opacity-75 px-4 py-8 md:px-12 rounded shadow w-full"
       >
         <div class="text-lg text-wide leading-relaxed">
           {{ currentCarousel.text }}
