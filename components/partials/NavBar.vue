@@ -39,12 +39,12 @@ export default {
     return {
       JumpLinks: [
         { title: 'Departments', slug: '/#departments' },
-        { title: 'Contact', slug: '/#contact' },
+        { title: 'About', slug: '/#about' },
       ],
       anchorLinks: [
-        { title: 'About', slug: '/#about' },
         { title: 'Staff', slug: '/#staff' },
         { title: 'Gallery', slug: '/#gallery' },
+        { title: 'Contact', slug: '/#contact' },
       ],
     }
   },
