@@ -13,7 +13,11 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        name: 'viewport',
+        content:
+          'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
+      },
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [
@@ -58,24 +62,18 @@ export default {
     jit: true,
   },
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
-
-  // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
-
   publicRuntimeConfig: {
     schoolLogo: '/images/school-logo.svg',
     schoolName: 'Iwerekun Community Senior High School',
 
-    schoolEmail: 'contact@hisbiscusacademy.ng',
-    schoolTelephone: '+234 8100 123 456',
+    schoolEmail: 'support@myteckplus.com',
+    schoolTelephone: '+234 8092 750 000',
     schoolLocation: 'Lakowe, Ibeju-Lekki L.G.A, Lagos State',
 
-    schoolFacebook: 'https://facebook.com/HibiscusAcademy',
-    schoolTwitter: 'https://twitter.com/HibiscusAcademy',
-    schoolInstagram: 'https://instagram.com/HibiscusAcademy',
-    schoolYoutube: 'https://youtube.com/HibiscusAcademy',
+    schoolFacebook: 'https://facebook.com/futurexEdu',
+    schoolTwitter: 'https://twitter.com/futurexEdu',
+    schoolInstagram: 'https://instagram.com/futurexEdu',
+    schoolYoutube: 'https://youtube.com/futurexEdu',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
