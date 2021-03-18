@@ -5,7 +5,7 @@
     <nav class="py-4">
       <div>
         <img
-          :src="photos[0]"
+          :src="photos[currentPhoto]"
           class="rounded shadow mx-auto"
           style="max-height: 420px"
         />
@@ -13,27 +13,20 @@
 
       <div class="flex justify-center p-2">
         <img
-          v-for="photo in photos"
+          v-for="(photo, i) in photos"
           :key="photo"
           :src="photo"
-          class="rounded shadow m-1"
+          class="rounded hover:shadow-md cursor-pointer m-1"
           style="max-height: 64px"
+          @click="changePhoto(i)"
         />
       </div>
     </nav>
 
     <!-- <home-hero
+      reversed
       src="/images/heros/hero-1.jpeg"
       title="Our condusive enviroment makes learning a bliss"
-    /> -->
-    <!-- <home-hero
-      reversed
-      src="/images/heros/hero-2.jpeg"
-      title="Readers are Leaders. Hence our duly stocked library."
-    />
-    <home-hero
-      src="/images/heros/hero-3.jpeg"
-      title="We hoist our flag at Extracurricular activities."
     /> -->
   </section>
 </template>
@@ -42,12 +35,21 @@
 export default {
   data() {
     return {
+      currentPhoto: 0,
       photos: [
-        '/images/heros/hero-1.jpeg',
-        '/images/heros/hero-2.jpeg',
-        '/images/heros/hero-3.jpeg',
+        // prefered photo size is 1008px X 490px
+
+        '/images/gallery/hero-1.jpeg',
+        '/images/gallery/hero-2.jpeg',
+        '/images/gallery/hero-3.jpeg',
       ],
     }
+  },
+
+  methods: {
+    changePhoto(i) {
+      this.currentPhoto = i
+    },
   },
 }
 </script>
