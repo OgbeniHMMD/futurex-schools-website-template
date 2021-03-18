@@ -60,20 +60,98 @@ export default {
 1. The image assets can be found and modified in the `/static/images/` directory & sub-directories.
 2. The components used can be found at `/components/home/` and/or `/components/partials/`
 
-### Gallery Section
+### Header Slider
 
-You can change the photo for the gallery at `/components/partials/Gallery.vue`
+You can change the header photos and description text at `/components/home/Header.vue`.
 
-**I.e :**
+**NB:** Please the do not forget to use unique names for the titling
+
+**E.g:**
 
 ```
 export default {
   data() {
     return {
-      photos: [
-        '/images/gallery/hero-1.jpeg',
-        '/images/gallery/hero-2.jpeg',
-        '/images/gallery/hero-3.jpeg',
+      carousel: [
+        {
+          title: 'Principal and Students 1',
+          image: '/images/sliders/slide-1.jpeg',
+          text:
+            'We aims at preparing for the brightest future by giving unparalleled dedication and commitment to our students and their variety of needs, passions and dreams.',
+        },
+        {
+          title: 'Trophy 1',
+          image: '/images/sliders/slide-2.jpeg',
+          text:
+            'We won bla bla bla Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        },
+        {
+          title: 'Principal and Students 2',
+          image: '/images/sliders/slide-3.jpeg',
+          text:
+            'Lorem ipsum dolor sit amet, Maecenas posuere et ex sit amet lobortis....',
+        },
+      ],
+    }
+  },
+}
+```
+
+## Contact Section
+
+You can change the _about_ texts directly in the `/components/partials/AboutSchool.vue` file.
+
+## Department Section
+
+You can change the department names and Icon text at `/components/partials/MissionVision.vue`
+
+** NB: ** We are using [Font Awesome](https://fontawesome.com/).
+
+**E.g:**
+
+```
+  data() {
+    return {
+      departments: [
+        {
+          title: 'Business & Commerce',
+          icon: 'fa-chart-line',
+        },
+        {
+          title: 'Art & Humanity',
+          icon: 'fa-landmark',
+        },
+        {
+          title: 'Science',
+          icon: 'fa-microscope',
+        },
+      ],
+    }
+  },
+}
+```
+
+## Mission & Vision Section
+
+You can change the mission and vision text at `/components/partials/MissionVision.vue`
+
+**E.g:**
+
+```
+export default {
+  data() {
+    return {
+      misionVision: [
+        {
+          title: 'Mission Statement',
+          text:
+            'Our mission is to Teach Student the right attitude and life Skills through quality Education',
+        },
+        {
+          title: 'Vision Statement',
+          text:
+            'Our vision is to train children how to have love for hard work and honesty...
+        },
       ],
     }
   },
@@ -82,7 +160,7 @@ export default {
 
 ### Staff Section
 
-You can change the photos and names for the Staff at `/components/partials/OurStaff.vue`.
+You can change the photos and names for the Staff at `/components/partials/OurStaff.vue`
 
 **NB:** Please do not overlook the staff Id. Because it will be used to process the ordering of the items [on larger screens].
 
@@ -117,42 +195,31 @@ export default {
 }
 ```
 
-### Header Slider
+### Gallery Section
 
-You can change the header photos and description text at `/components/home/Header.vue`.
+You can change the photo for the gallery at `/components/partials/Gallery.vue`
 
-**NB:** Please the do not forget to use unique names for the titling
-
-**E.g:**
+**I.e :**
 
 ```
 export default {
   data() {
     return {
-      carousel: [
-        {
-          title: 'Principal and Students 1',
-          image: '/images/sliders/slide-1.jpeg',
-          text:
-            'We aims at preparing for the brightest future by giving unparalleled dedication and commitment to our students and their variety of needs, passions and dreams.',
-        },
-        {
-          title: 'Trophy 1',
-          image: '/images/sliders/slide-2.jpeg',
-          text:
-            'We won bla bla bla Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere et ex sit amet lobortis. Pellentesque sodales et lacus in posuere.',
-        },
-        {
-          title: 'Principal and Students 2',
-          image: '/images/sliders/slide-3.jpeg',
-          text:
-            'Lorem ipsum dolor sit amet, Maecenas posuere et ex sit amet lobortis. Pellentesque sodales et lacus in posuere. Suspendisse rhoncus ultrices elit sagittis viverra.',
-        },
+      photos: [
+        '/images/gallery/hero-1.jpeg',
+        '/images/gallery/hero-2.jpeg',
+        '/images/gallery/hero-3.jpeg',
       ],
     }
   },
 }
 ```
+
+## Contact Section
+
+Info at the contact section are auto set from the nuxt.config variables.
+
+##
 
 Comming soon...
 
