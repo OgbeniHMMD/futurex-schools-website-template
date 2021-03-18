@@ -24,6 +24,7 @@ module.exports = {
 
     extend: {
       backgroundOpacity: ['active'],
+
       colors: {
         primary: '#066d36',
         secondary: '#A6EBC9',

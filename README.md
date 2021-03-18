@@ -1,5 +1,23 @@
 # schools-website-template
 
+This is a basic template for school that have adopted FutureX.
+
+## Theme setup
+
+You can tweak the color scheme in the `/tailwind.config.js` file. E.g:
+
+```
+extend: {
+      colors: {
+        primary: '#066d36',
+        secondary: '#A6EBC9',
+        accent: '#fffbdb',
+      },
+    },
+```
+
+##
+
 ## Build Setup
 
 ```bash
