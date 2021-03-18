@@ -82,10 +82,11 @@ export default {
 
 ### Staff Section
 
-You can change the photo and names for the Staff at `/components/partials/OurStaff.vue`.
+You can change the photos and names for the Staff at `/components/partials/OurStaff.vue`.
+
 **NB:** Please do not overlook the staff Id. Because it will be used to process the ordering of the items [on larger screens].
 
-**E.g :**
+**E.g:**
 
 ```
 export default {
@@ -109,6 +110,43 @@ export default {
           title: 'Vice Principal (Administration)',
           name: 'Mrs Okojie',
           src: '/images/staff/staff-2.jpg',
+        },
+      ],
+    }
+  },
+}
+```
+
+### Header Slider
+
+You can change the header photos and description text at `/components/home/Header.vue`.
+
+**NB:** Please the do not forget to use unique names for the titling
+
+**E.g:**
+
+```
+export default {
+  data() {
+    return {
+      carousel: [
+        {
+          title: 'Principal and Students 1',
+          image: '/images/sliders/slide-1.jpeg',
+          text:
+            'We aims at preparing for the brightest future by giving unparalleled dedication and commitment to our students and their variety of needs, passions and dreams.',
+        },
+        {
+          title: 'Trophy 1',
+          image: '/images/sliders/slide-2.jpeg',
+          text:
+            'We won bla bla bla Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere et ex sit amet lobortis. Pellentesque sodales et lacus in posuere.',
+        },
+        {
+          title: 'Principal and Students 2',
+          image: '/images/sliders/slide-3.jpeg',
+          text:
+            'Lorem ipsum dolor sit amet, Maecenas posuere et ex sit amet lobortis. Pellentesque sodales et lacus in posuere. Suspendisse rhoncus ultrices elit sagittis viverra.',
         },
       ],
     }
