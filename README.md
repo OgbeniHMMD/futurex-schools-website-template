@@ -4,7 +4,7 @@ This is a basic template for school that have adopted [FutureX](https://nuxtjs.o
 
 **NB :** This template was built with [Nuxt.js](https://nuxtjs.org) & [TailwindCss](https://tailwindcss.com/).
 
-##
+## Basic School Details
 
 You should set your school's details in the `/nuxt.config.js` file.
 
@@ -105,7 +105,7 @@ You can change the _about_ texts directly in the `/components/partials/AboutScho
 
 You can change the department names and Icon text at `/components/partials/MissionVision.vue`
 
-** NB: ** We are using [Font Awesome](https://fontawesome.com/).
+**NB:** We are using [Font Awesome](https://fontawesome.com/).
 
 **E.g:**
 
@@ -219,9 +219,10 @@ export default {
 
 Info at the contact section are auto set from the nuxt.config variables.
 
-##
+## Deployment
 
-Comming soon...
+The Github action file At `/.github/workflows/deploy.yml` will help auto build (and push) the app to the `gh_pages` branch.
+All you then need do is creat a `/CNAME` file for the school's (sub)domain to be recognized. Read [Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site)
 
 ## Build Setup
 
