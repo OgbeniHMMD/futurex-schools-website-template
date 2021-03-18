@@ -22,12 +22,6 @@
         />
       </div>
     </nav>
-
-    <!-- <home-hero
-      reversed
-      src="/images/heros/hero-1.jpeg"
-      title="Our condusive enviroment makes learning a bliss"
-    /> -->
   </section>
 </template>
 
