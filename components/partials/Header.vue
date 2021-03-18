@@ -14,15 +14,6 @@
         <div class="text-lg text-wide leading-relaxed">
           {{ currentCarousel.text }}
         </div>
-
-        <!-- <div class="pt-8">
-          <a
-            href="#about"
-            class="text-white bg-primary text-center text-lg font-semibold px-8 py-3 rounded mr-2 hover:bg-accent hover:text-primary border border-primary"
-          >
-            Explore Website <i class="fas fa-chevron-circle-down ml-8" />
-          </a>
-        </div> -->
       </div>
     </nav>
   </header>

@@ -69,9 +69,9 @@ export default {
     return {
       quickLinks: [
         { title: 'Home', slug: '/#home', icon: 'fa-home' },
-        { title: 'About Us', slug: '/#about/', icon: 'fa-info-circle' },
-        { title: 'Our Staff', slug: '/#staff/', icon: 'fa-users' },
-        { title: 'Gallery', slug: '/#gallery/', icon: 'fa-photo-video' },
+        { title: 'About Us', slug: '/#about', icon: 'fa-info-circle' },
+        { title: 'Our Staff', slug: '/#staff', icon: 'fa-users' },
+        { title: 'Gallery', slug: '/#gallery', icon: 'fa-photo-video' },
       ],
       socialLinks: [
         {
