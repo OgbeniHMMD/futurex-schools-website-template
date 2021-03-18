@@ -6,7 +6,7 @@ This is a basic template for school that have adopted [FutureX](https://nuxtjs.o
 
 ##
 
-You should set your school's detials in the `/nuxt.config.js` file.
+You should set your school's details in the `/nuxt.config.js` file.
 
 **E.g:**
 
@@ -53,7 +53,9 @@ export default {
 }
 ```
 
-##
+## Changing Website Content
+
+Comming soon...
 
 ## Build Setup
 
