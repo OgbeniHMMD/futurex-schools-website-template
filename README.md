@@ -4,6 +4,8 @@ This is a basic template for school that have adopted [FutureX](https://nuxtjs.o
 
 **NB :** This template was built with [Nuxt.js](https://nuxtjs.org) & [TailwindCss](https://tailwindcss.com/).
 
+Live link: https://futurex-website-template.netlify.app/
+
 ## Basic School Details
 
 You should set your school's details in the `/nuxt.config.js` file.
