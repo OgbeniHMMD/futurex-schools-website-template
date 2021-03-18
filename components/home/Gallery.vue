@@ -11,13 +11,13 @@
         />
       </div>
 
-      <div class="flex justify-center p-2">
+      <div class="flex flex-wrap justify-center p-2">
         <img
           v-for="(photo, i) in photos"
           :key="photo"
           :src="photo"
           class="rounded hover:shadow-md cursor-pointer m-1"
-          style="max-height: 64px"
+          style="max-width: 64px"
           @click="changePhoto(i)"
         />
       </div>

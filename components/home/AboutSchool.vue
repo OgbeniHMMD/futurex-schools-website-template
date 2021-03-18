@@ -11,7 +11,7 @@
 
       <div class="pt-8">
         <a
-          href="#about"
+          href="#mission-vision"
           class="text-white bg-primary text-center text-lg font-semibold px-8 py-3 rounded mr-2 hover:bg-accent hover:text-primary border border-primary"
         >
           Learn More <i class="fas fa-info-circle ml-8" />

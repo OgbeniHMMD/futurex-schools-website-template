@@ -1,5 +1,5 @@
 <template>
-  <section id="departments" class="container py-12">
+  <section id="mission-vision" class="container py-12">
     <div class="md:flex justify-around md:py-8">
       <div
         v-for="item in misionVision"
