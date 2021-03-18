@@ -17,17 +17,19 @@
 
       <h2 class="text-xl text-center font-semibold py-8">Meet Our Staff</h2>
 
-      <div class="flex justify-evenly py-8">
+      <div class="md:flex justify-center items-center p-8">
         <div
           v-for="item in staff"
-          :key="item.name"
-          class="flex-1 font-semibold text-primary text-center"
+          :key="item.id"
+          class="flex-1 font-semibold text-primary text-center p-4 md:pb-0"
+          :class="'order-' + item.id"
         >
-          <span class="rounded-full border border-primary">
-            <i
-              :class="item.avatar"
-              class="fas fa-7x rounded-full border border-primary"
-          /></span>
+          <img
+            :src="item.src"
+            alt="staff"
+            :width="item.id == 2 ? '320' : '250'"
+            class="rounded-full border border-primary mx-auto hover:shadow-lg"
+          />
           <div class="pt-4 text-lg">{{ item.name }}</div>
           <div class="pt-2 text-black">{{ item.title }}</div>
         </div>
@@ -42,19 +44,22 @@ export default {
     return {
       staff: [
         {
-          title: 'Vice Principal (Academics)',
-          name: 'Mr Omomo',
-          avatar: 'fa-chart-line',
-        },
-        {
+          id: 2,
           title: 'Principal',
           name: 'Mrs. Adenike Fashola',
-          avatar: 'fa-landmark',
+          src: '/images/staff/staff-3.jpg',
         },
         {
+          id: 1,
+          title: 'Vice Principal (Academics)',
+          name: 'Mr Omomo',
+          src: '/images/staff/staff-1.jpg',
+        },
+        {
+          id: 3,
           title: 'Vice Principal (Administration)',
           name: 'Mrs Okojie',
-          avatar: 'fa-microscope',
+          src: '/images/staff/staff-2.jpg',
         },
       ],
     }
