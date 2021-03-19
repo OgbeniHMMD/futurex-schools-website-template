@@ -8,7 +8,7 @@ Live link: https://futurex-website-template.netlify.app/
 
 ## Basic School Details
 
-You should set your school's details in the `/nuxt.config.js` file.
+You should set your school's details in the `/nuxt.config.js` file
 
 **E.g :**
 
